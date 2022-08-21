@@ -15,3 +15,14 @@ int[] NewArray(int[] array)
 int[] array = new int[length];
 array = NewArray(array);
 Console.WriteLine("[" + string.Join(", ", array) + "]");
+
+int Count = 0;
+for (int i = 0; i < length; i++)
+if (i < length)
+{
+     if (i % 2 ==0)
+        Count ++; 
+}
+    else
+        Console.WriteLine("Чётные числа не найдены");  
+Console.WriteLine("Kоличество чётных чисел в массиве:" + Count);
